@@ -1,0 +1,75 @@
+
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:id="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/edittext"
+        android:hint="Message"
+        android:textSize="25dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/button"
+        android:layout_below="@+id/edittext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="55dp"/> 
+ In Main: 
+ EditText edittext;
+    TextView textView;
+    Button button; 
+ In onCreate: 
+ edittext = (EditText) findViewById(R.id.edittext);
+        textView = (TextView) findViewById(R.id.textview);
+        button = findViewById(R.id.button);
+ 
+ 
+ In Main: 
+ DatabaseReference databaseReference; 
+ in onCreate: 
+ databaseReference = FirebaseDatabase.getInstance().getReference().child("preference");
+ 
+ 
+ button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+ 
+ 
+ String getter = edittext.getText().toString(); 
+ 
+ textView.setText(snapshot.child("data").getValue().toString());
+ 
+ 
+ HashMap<String, Object> send = new HashMap<>();
+                send.put("data",Object name);
+                databaseReference.updateChildren(send);
+ 
+ 
+ HashMap<String, Object> send = new HashMap<>();
+                send.put("data",Object name);
+                databaseReference.updateChildren(send);

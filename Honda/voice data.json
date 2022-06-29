@@ -1,0 +1,27 @@
+{"intents": [
+
+  {
+    "tag": "greetings",
+    "patterns": ["turn on the Air conditioner,switch on"],
+    "response": ["Air conditioner turned on"],
+    "context_set": ""
+
+  },
+
+  {
+    "tag": "help",
+    "patterns": ["increase the volume, turn up the volume,blast the volume "],
+    "response": ["volume increased my 5 percent", "5 percent volume increased"],
+    "context_set": ""
+
+  },
+  {
+    "tag": "call initiate",
+    "patterns": ["reduce the volume, decrease the volume, lower the music"],
+    "response": ["volume reduced by 5 percent", "5 percent volume decreased"],
+    "context_set": ""
+
+  }
+
+]}
+

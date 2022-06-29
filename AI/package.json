@@ -1,0 +1,38 @@
+{"intents": [
+
+  {
+    "tag": "greetings",
+    "patterns": ["hi","how are you","are you ok","you there","hello","hey platipus","good day","whats up"],
+    "response": ["hi vinoth","how may i help you"],
+    "context_set": ""
+  },
+
+  {
+    "tag": "help",
+    "patterns": ["who are you","what could you do","how could you help me","what do you got","i need some help"],
+    "response": ["happy to help","whats the problem","how may i help you","at your service sir"],
+    "context_set": ""
+  },
+  {
+    "tag": "call initiate",
+    "patterns": ["hello","how can i help you","this is","saloon shop center"],
+    "response": ["hi iam calling on behalf of my boss to book a haircut"],
+    "context_set": ""
+  },
+  {
+    "tag": "name request",
+    "patterns": ["whats your boss name","whats his name","under what name should i make the reservation","what is it again"],
+    "response": ["the name is vinoth"],
+    "context_set": ""
+  },
+  {
+    "tag": "name spell",
+    "patterns": ["can you spell the name","spelling please"],
+    "response": ["sure, its V I N O T H"],
+    "context_set": ""
+  }
+
+
+
+]}
+

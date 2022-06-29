@@ -1,0 +1,68 @@
+{"intents": [
+
+  {
+    "tag": "speech to text",
+    "patterns": ["create a text view edit text button preference"],
+    "response": ["\n <TextView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:hint=\"Message\"\n        android:id=\"@+id/textview\"\n        android:layout_centerHorizontal=\"true\"\n        android:layout_marginTop=\"240dp\"\n        android:textSize=\"30dp\"/>\n\n    <EditText\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_centerInParent=\"true\"\n        android:id=\"@+id/edittext\"\n        android:hint=\"Message\"\n        android:textSize=\"25dp\"\n        />\n    <Button\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Send\"\n        android:id=\"@+id/button\"\n        android:layout_below=\"@+id/edittext\"\n        android:layout_centerInParent=\"true\"\n        android:layout_marginTop=\"55dp\"/> \n In Main: \n EditText edittext;\n    TextView textView;\n    Button button; \n In onCreate: \n edittext = (EditText) findViewById(R.id.edittext);\n        textView = (TextView) findViewById(R.id.textview);\n        button = findViewById(R.id.button);"],
+    "context_set": "",
+    "continue": "yes"
+  },
+
+  {
+    "tag": "completion",
+    "patterns": ["create database access block"],
+    "response": ["\n \n \n In Main: \n DatabaseReference databaseReference; \n in onCreate: \n databaseReference = FirebaseDatabase.getInstance().getReference().child(\"preference\");"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "access the db",
+    "patterns": ["create a button on click listener database data change listener"],
+    "response": ["\n \n \n button.setOnClickListener(new View.OnClickListener() {\n            @Override\n            public void onClick(View view) {\n                \n            }\n        });\n\n        databaseReference.addValueEventListener(new ValueEventListener() {\n            @Override\n            public void onDataChange(@NonNull DataSnapshot snapshot) {\n                \n            }\n\n            @Override\n            public void onCancelled(@NonNull DatabaseError error) {\n\n            }\n        });"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "post to bd",
+    "patterns": ["create a get string from input and get string from database preference"],
+    "response": ["\n \n \n String getter = edittext.getText().toString(); \n \n textView.setText(snapshot.child(\"data\").getValue().toString());"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "name spell",
+    "patterns": ["create a hashmap for upload simple"],
+    "response": ["\n \n \n HashMap<String, Object> send = new HashMap<>();\n                send.put(\"data\",Object name);\n                databaseReference.updateChildren(send);"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "service",
+    "patterns": ["what kind of service","just a haircut or"],
+    "response": ["Just a regular haircut for a very jumbled hair"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "name",
+    "patterns": ["whats the name","of your boss","what name should i book"],
+    "response": ["His name is Vinoth"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "ok thing",
+    "patterns": ["ok i have booked the haircut","for vinoth"],
+    "response": ["OK thanks for your help"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "bye",
+    "patterns": ["no problem","thats ok","see you tomorrow"],
+    "response": ["Sure, bye"],
+    "context_set": "",
+    "continue": "no"
+  }
+]}
+

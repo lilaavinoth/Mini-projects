@@ -1,0 +1,188 @@
+{"intents": [
+
+  {
+    "tag": 1,
+    "patterns": ["turn on the Air conditioner","switch on"],
+    "response": ["Air conditioner turned on"],
+    "context_set": ""
+
+  },
+
+  {
+    "tag": 2,
+    "patterns": ["increase the volume by 5 percent", "turn up the volume"],
+    "response": ["volume increased my 5 percent", "5 percent volume increased"],
+    "context_set": ""
+
+  },
+  {
+    "tag": 3,
+    "patterns": ["reduce the volume by 5 percent", "decrease the volume", "lower the music"],
+    "response": ["volume reduced by 5 percent", "5 percent volume decreased"],
+    "context_set": ""
+
+  },
+  {
+    "tag": 4,
+    "patterns": ["turn on the car lights", "headlight on","switch on car lights"],
+    "response": ["headlights have been turned on", "lights are on"],
+    "context_set": ""
+
+  },
+  {
+    "tag": 5,
+    "patterns": ["whats my speed", "what is the speed", "what is the car speed","how fast am i going"],
+    "response": ["The speed is"],
+    "context_set": ""
+
+  },
+  {
+    "tag": 6,
+    "patterns": ["whats my engine temperature", "what is the engine temperature", "what is the temperature of engine"],
+    "response": ["The engine temperature is"],
+    "context_set": ""
+  },
+  {
+    "tag": 7,
+    "patterns": ["turn off the car lights", "headlight off", "switch off lights"],
+    "response": ["headlights have been turned off", "lights are off"],
+    "context_set": ""
+  },
+  {
+    "tag": 8,
+    "patterns": ["what is the car fuel level","how much fuel is left"],
+    "response": ["The fuel remaining in the car is, "],
+    "context_set": ""
+  },
+  {
+    "tag": 9,
+    "patterns": ["switch to high beam","change lights to high beam in car"],
+    "response": ["Car lights changed to high beam"],
+    "context_set": ""
+  },
+  {
+    "tag": 10,
+    "patterns": ["switch to low beam","change lights to low beam in car"],
+    "response": ["Car lights changed to low beam"],
+    "context_set": ""
+  },
+  {
+    "tag": 11,
+    "patterns": ["pull up the parking break","turn on the parking break","switch on the parking break"],
+    "response": ["Parking breaks are on"],
+    "context_set": ""
+  },
+  {
+    "tag": 12,
+    "patterns": ["pull down the parking break","turn off the parking break","switch off the parking break"],
+    "response": ["Parking breaks are off"],
+    "context_set": ""
+  },
+  {
+    "tag": 13,
+    "patterns": ["turn on the warning lights","switch on the warning lights"],
+    "response": ["The Warning lights have been turned on"],
+    "context_set": ""
+  },
+  {
+    "tag": 14,
+    "patterns": ["turn off the warning lights","switch off the warning lights"],
+    "response": ["The Warning lights have been turned off"],
+    "context_set": ""
+  },
+  {
+    "tag": 15,
+    "patterns": ["turn on the ignition", "switch on the ignition", "turn on the car","turn on the vehicle"],
+    "response": ["The ignition has been turned on"],
+    "context_set": ""
+  },
+  {
+    "tag": 16,
+    "patterns": ["turn off the ignition", "switch off the ignition", "turn off the car","turn off the vehicle"],
+    "response": ["The ignition has been turned off"],
+    "context_set": ""
+  },
+  {
+    "tag": 17,
+    "patterns": ["close all the windows of the car","shut all the windows"],
+    "response": ["The windows have been closed"],
+    "context_set": ""
+  },
+  {
+    "tag": 18,
+    "patterns": ["whats the tire pressure of the car","tire pressure of the vehicle","whats the tire pressure"],
+    "response": ["The tire pressure of the car is, "],
+    "context_set": ""
+  },
+  {
+    "tag": 19,
+    "patterns": ["turn on bluetooth","switch on bluetooth"],
+    "response": ["bluetooth has been turned on"],
+    "context_set": ""
+  },
+  {
+    "tag": 20,
+    "patterns": ["turn off bluetooth","switch offblue tooth"],
+    "response": ["bluetooth has been turned off"],
+    "context_set": ""
+  },
+  {
+    "tag": 21,
+    "patterns": ["change to FM","change source to FM"],
+    "response": ["Music source changed to FM"],
+    "context_set": ""
+  },
+  {
+    "tag": 22,
+    "patterns": ["change to AM","change source to AM"],
+    "response": ["Music source changed to AM"],
+    "context_set": ""
+  },
+  {
+    "tag": 23,
+    "patterns": ["change to WB","change source to WB"],
+    "response": ["Music source changed to WB"],
+    "context_set": ""
+  },
+  {
+    "tag": 24,
+    "patterns": ["change to News programme","switch the programme type to news"],
+    "response": ["Programme type changed to NEWS"],
+    "context_set": ""
+  },
+  {
+    "tag": 26,
+    "patterns": ["change to Public programme","switch the programme type to Public"],
+    "response": ["Programme type changed to Public"],
+    "context_set": ""
+  },
+  {
+    "tag": 27,
+    "patterns": ["change to Weather programme","switch the programme type to Weather"],
+    "response": ["Programme type changed to Weather"],
+    "context_set": ""
+  },
+  {
+    "tag": 28,
+    "patterns": ["change to Emergency programme","switch the programme type to Emergency"],
+    "response": ["Programme type changed to Emergency"],
+    "context_set": ""
+  },
+  {
+    "tag": 29,
+    "patterns": ["turn on the wipers","switch on the vipers"],
+    "response": ["Wipers are on"],
+    "context_set": ""
+  },
+  {
+    "tag": 30,
+    "patterns": ["turn off the wipers","switch iff the vipers"],
+    "response": ["Wipers are off"],
+    "context_set": ""
+  }
+
+
+
+
+]}
+

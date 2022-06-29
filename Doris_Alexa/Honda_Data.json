@@ -1,0 +1,15 @@
+{
+  "firstName": "lilaa",
+  "lastName": "vinoth",
+  "ac state": "45 degree",
+  "address": [
+    {
+      "street": "lingam nagar",
+      "city": "Trichy"
+    },
+    {
+      "street": "wash street",
+      "city": "France"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{"intents": [
+
+  {
+    "tag": "greetings",
+    "patterns": ["How may i help you","Hi how can i help you","thank you for calling","Good morning","good evening"],
+    "response": ["Hi, I'm calling to book a haircut for my boss"],
+    "context_set": "",
+    "continue": "yes"
+  },
+
+  {
+    "tag": "help",
+    "patterns": ["when do you want to book","whats the date","sure when do you want to get a haircut"],
+    "response": ["I'm looking to book on Sep 3"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "call initiate",
+    "patterns": ["sure let me check","please wait a while","hold on a second"],
+    "response": ["Yea, sure"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "name request",
+    "patterns": ["whats the time you are looking to book","whats your preferred time"],
+    "response": ["At 12 PM"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "name spell",
+    "patterns": ["Sorry we do not have booking available at your time","but we have at 1","will your boss be available at that time"],
+    "response": ["Yea, he is free the whole time, because i take care of all his works"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "service",
+    "patterns": ["what kind of service","just a haircut or"],
+    "response": ["Just a regular haircut for a very jumbled hair"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "name",
+    "patterns": ["whats the name","of your boss","what name should i book"],
+    "response": ["His name is Vinoth"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "ok thing",
+    "patterns": ["ok i have booked the haircut","for vinoth"],
+    "response": ["OK thanks for your help"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "bye",
+    "patterns": ["no problem","thats ok","see you tomorrow"],
+    "response": ["Sure, bye"],
+    "context_set": "",
+    "continue": "no"
+  }
+]}
+

@@ -1,0 +1,27 @@
+{"intents": [
+
+  {
+    "tag": "greetings",
+    "patterns": ["im never going to jog again"],
+    "response": ["Why? Its good for your health"],
+    "context_set": "",
+    "continue": "yes"
+  },
+
+  {
+    "tag": "help",
+    "patterns": ["ok im need to go the restroom you stay outsid"],
+    "response": ["ok"],
+    "context_set": "",
+    "continue": "yes"
+  },
+  {
+    "tag": "call initiate",
+    "patterns": [""],
+    "response": ["What do you want now?"],
+    "context_set": "",
+    "continue": "yes"
+  }
+
+]}
+
